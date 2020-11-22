@@ -124,12 +124,14 @@
     <Content Include="Admins\assets\vendor\toastr\toastr.js" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.css" />
     <Content Include="Admins\assets\vendor\toastr\toastr.min.js" />
+    <Content Include="Admins\Catalohue\Cl_Add.aspx" />
     <Content Include="Admins\Free\Free_Add.aspx" />
     <Content Include="Admins\Free\Free_List.aspx" />
     <Content Include="Admins\Login.aspx" />
     <Content Include="Admins\Menu\Menus_List.aspx" />
     <Content Include="Admins\Menu\Menu_Add.aspx" />
     <Content Include="Admins\Menu\Menu_Remove.aspx" />
+    <Content Include="Admins\News\News_Add.aspx" />
     <Content Include="Admins\Order\Order_Add.aspx" />
     <Content Include="Admins\Order\Order_List.aspx" />
     <Content Include="Admins\Roles\Roles_Add.aspx" />
@@ -143,6 +145,7 @@
     <Content Include="Admins\SystemMenus\SystemMenus_Edit.aspx" />
     <Content Include="Admins\SystemMenus\SystemMenus_List.aspx" />
     <Content Include="Admins\SystemMenus\SystemMenu_Remove.aspx" />
+    <Content Include="Admins\Try\Try_Add.aspx" />
     <Content Include="Admins\UsersPermissions\UsersPermissions_List.aspx" />
     <Content Include="Admins\Users\Users_Add.aspx" />
     <Content Include="Admins\Users\Users_Edit.aspx" />
@@ -259,7 +262,9 @@
     <Content Include="Web\assets\js1\jquery.foucs.js" />
     <Content Include="Web\Fangying.aspx" />
     <Content Include="Web\Guanyu.aspx" />
+    <Content Include="Web\Index.aspx" />
     <Content Include="Web\Jieshu.aspx" />
+    <Content Include="Web\Jieshu1.aspx" />
     <Content Include="Web\order.aspx" />
     <Content Include="Web\Tuandui.aspx" />
     <Content Include="Web\WebForm1.aspx" />
@@ -352,6 +357,13 @@
     <Compile Include="Admins\About\About_List.aspx.designer.cs">
       <DependentUpon>About_List.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\Catalohue\Cl_Add.aspx.cs">
+      <DependentUpon>Cl_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Catalohue\Cl_Add.aspx.designer.cs">
+      <DependentUpon>Cl_Add.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\Free\Free_Add.aspx.cs">
       <DependentUpon>Free_Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -393,6 +405,13 @@
     </Compile>
     <Compile Include="Admins\Menu\Menu_Remove.aspx.designer.cs">
       <DependentUpon>Menu_Remove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\News\News_Add.aspx.cs">
+      <DependentUpon>News_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\News\News_Add.aspx.designer.cs">
+      <DependentUpon>News_Add.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\Order\Order_Add.aspx.cs">
       <DependentUpon>Order_Add.aspx</DependentUpon>
@@ -492,6 +511,13 @@
     <Compile Include="Admins\SystemMenus\SystemMenu_Remove.aspx.designer.cs">
       <DependentUpon>SystemMenu_Remove.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admins\Try\Try_Add.aspx.cs">
+      <DependentUpon>Try_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Try\Try_Add.aspx.designer.cs">
+      <DependentUpon>Try_Add.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admins\UsersPermissions\UsersPermissions_List.aspx.cs">
       <DependentUpon>UsersPermissions_List.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -541,12 +567,26 @@
     <Compile Include="Web\Guanyu.aspx.designer.cs">
       <DependentUpon>Guanyu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Web\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Web\Jieshu.aspx.cs">
       <DependentUpon>Jieshu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Web\Jieshu.aspx.designer.cs">
       <DependentUpon>Jieshu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Jieshu1.aspx.cs">
+      <DependentUpon>Jieshu1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Jieshu1.aspx.designer.cs">
+      <DependentUpon>Jieshu1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web\LayOut.Master.cs">
       <DependentUpon>LayOut.Master</DependentUpon>
@@ -652,6 +692,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="upload\Free\" />
+    <Folder Include="upload\News\" />
     <Folder Include="upload\users\" />
   </ItemGroup>
   <ItemGroup>

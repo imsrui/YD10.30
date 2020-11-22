@@ -44,12 +44,15 @@
     <Compile Include="Copyrights.cs" />
     <Compile Include="FriendLinks.cs" />
     <Compile Include="reception\About.cs" />
+    <Compile Include="reception\Catalogue.cs" />
     <Compile Include="reception\Contact.cs" />
     <Compile Include="reception\Explanation.cs" />
     <Compile Include="reception\Free.cs" />
     <Compile Include="reception\Menu.cs" />
     <Compile Include="reception\Message.cs" />
+    <Compile Include="reception\News.cs" />
     <Compile Include="reception\Order1.cs" />
+    <Compile Include="reception\Try.cs" />
     <Compile Include="Roles.cs" />
     <Compile Include="Seos.cs" />
     <Compile Include="SystemMenus.cs" />

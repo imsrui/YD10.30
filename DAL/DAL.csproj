@@ -46,16 +46,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AboutManager.cs" />
+    <Compile Include="CatalogueManager.cs" />
     <Compile Include="ConcactManager.cs" />
     <Compile Include="ExplanationManager.cs" />
     <Compile Include="FreeManager.cs" />
     <Compile Include="MenuManager.cs" />
+    <Compile Include="NewsManager.cs" />
     <Compile Include="Order1Manager.cs" />
     <Compile Include="RolesManager.cs" />
     <Compile Include="SeosManager.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemMenusManager.cs" />
+    <Compile Include="TryManager.cs" />
     <Compile Include="UsersManager.cs" />
     <Compile Include="UsersPermissionsManager.cs" />
     <Compile Include="WebMenusManager.cs" />
