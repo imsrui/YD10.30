@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/LayOut.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApp.Web.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Web/LayOut.Master" AutoEventWireup="true" CodeBehind="zixun.aspx.cs" Inherits="WebApp.Web.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>

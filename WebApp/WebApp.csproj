@@ -1,6 +1,5 @@
 ﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,6 +47,9 @@
     <Reference Include="AspNetPager">
       <HintPath>..\..\..\..\全部1\QQ文件\全部文件\工具包\分页插件\AspNetPager.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=3.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -65,11 +67,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admins\About\About_List.aspx" />
@@ -127,6 +124,7 @@
     <Content Include="Admins\Catalohue\Cl_Add.aspx" />
     <Content Include="Admins\Free\Free_Add.aspx" />
     <Content Include="Admins\Free\Free_List.aspx" />
+    <Content Include="Admins\Jieshu\Js_Add.aspx" />
     <Content Include="Admins\Login.aspx" />
     <Content Include="Admins\Menu\Menus_List.aspx" />
     <Content Include="Admins\Menu\Menu_Add.aspx" />
@@ -267,7 +265,7 @@
     <Content Include="Web\Jieshu1.aspx" />
     <Content Include="Web\order.aspx" />
     <Content Include="Web\Tuandui.aspx" />
-    <Content Include="Web\WebForm1.aspx" />
+    <Content Include="Web\zixun.aspx" />
     <Content Include="Web\Wenhua.aspx" />
     <Content Include="Admins\Welcome\Welcome.aspx" />
     <None Include="Scripts\jquery-3.0.0-vsdoc.js" />
@@ -377,6 +375,13 @@
     </Compile>
     <Compile Include="Admins\Free\Free_List.aspx.designer.cs">
       <DependentUpon>Free_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Jieshu\Js_Add.aspx.cs">
+      <DependentUpon>Js_Add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Jieshu\Js_Add.aspx.designer.cs">
+      <DependentUpon>Js_Add.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -609,12 +614,12 @@
     <Compile Include="Web\Tuandui.aspx.designer.cs">
       <DependentUpon>Tuandui.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Web\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Web\zixun.aspx.cs">
+      <DependentUpon>zixun.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="Web\zixun.aspx.designer.cs">
+      <DependentUpon>zixun.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web\Wenhua.aspx.cs">
       <DependentUpon>Wenhua.aspx</DependentUpon>
@@ -692,6 +697,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="upload\Free\" />
+    <Folder Include="upload\Jieshu\" />
     <Folder Include="upload\News\" />
     <Folder Include="upload\users\" />
   </ItemGroup>
@@ -737,11 +743,12 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.3.6.0\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.targets'))" />
   </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

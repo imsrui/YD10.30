@@ -47,9 +47,7 @@
         $.foucs({ direction: 'right' });
     </script>
     <!-- 代码 结束 -->
-</div>
-</div>
-</div>
+
 
 <div class="main">
 <div class="main_1">
@@ -132,6 +130,7 @@
 </div>
 
 </div>
+    </div>
 
 <div class="clear"></div>
 </asp:Content>

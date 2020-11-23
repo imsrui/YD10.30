@@ -38,10 +38,10 @@
   <div class="logo_3"> 
   <div class="logo_3_1">
   <div  class="logo_3_2">
-    <form id="form1" name="form1" method="post" action="">
+  
       <label for="xcz"></label>
       <input type="text" name="xcz" id="xcz" style="width:328px; height:30px; line-height:34px; color:#bfb8b8;" value="搜狐视频丶视频丶公开课策划" />
-    </form>
+    
   </div>
   <div  class="logo_3_3"><a href="#"><img src="assets/images1/sous.jpg" /></a></div>
   </div>

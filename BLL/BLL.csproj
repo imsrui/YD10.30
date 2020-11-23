@@ -46,6 +46,7 @@
     <Compile Include="ContactService.cs" />
     <Compile Include="ExplanationService.cs" />
     <Compile Include="FreeService.cs" />
+    <Compile Include="JsService.cs" />
     <Compile Include="MenuService.cs" />
     <Compile Include="NewsService.cs" />
     <Compile Include="OrderService.cs" />

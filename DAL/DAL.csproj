@@ -50,6 +50,7 @@
     <Compile Include="ConcactManager.cs" />
     <Compile Include="ExplanationManager.cs" />
     <Compile Include="FreeManager.cs" />
+    <Compile Include="JsManager.cs" />
     <Compile Include="MenuManager.cs" />
     <Compile Include="NewsManager.cs" />
     <Compile Include="Order1Manager.cs" />

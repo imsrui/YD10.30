@@ -48,6 +48,7 @@
     <Compile Include="reception\Contact.cs" />
     <Compile Include="reception\Explanation.cs" />
     <Compile Include="reception\Free.cs" />
+    <Compile Include="reception\jieshu.cs" />
     <Compile Include="reception\Menu.cs" />
     <Compile Include="reception\Message.cs" />
     <Compile Include="reception\News.cs" />
